@@ -3,7 +3,7 @@ import random
 from tkinter import *
 from tkinter import messagebox
 import json
-from turtle import width
+
 
 
 def generator():
