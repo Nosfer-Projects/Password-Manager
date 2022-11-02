@@ -45,7 +45,7 @@ def save():
 
 
     if page == "" or e_mail == "" or password == "":
-        messagebox.showwarning(title = "Error 404", message= "Please fill all fields! ")
+        messagebox.showwarning(title = "Error", message= "Please fill all fields! ")
     else:
             try:
                 with open ("data.json", "r") as file:
@@ -70,14 +70,14 @@ def find_password():
         with open("data.json", "r") as file:
             data = json.load(file)
     except FileNotFoundError:
-        messagebox.showwarning(title = "Error 404", message= "There is no data about that(data.json) ")
+        messagebox.showwarning(title = "Error", message= "There is no data about that(data.json) ")
     else:   
         if page in data :
             email_search = data[page]["email"]
             password_search = data[page]["password"]
             messagebox.showwarning(title = page, message= f"email : {email_search}\npassword: {password_search}")
         else:
-            messagebox.showwarning(title = "Error 404", message= f"There is no data about that {page} ") 
+            messagebox.showwarning(title = "Error", message= f"There is no data about that {page} ") 
 
 
 
