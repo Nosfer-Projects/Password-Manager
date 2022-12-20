@@ -8,7 +8,7 @@ import json
 
 def generator():
   """
-  A function that creates a combination of upper case letters, lower case letters, numbers and special characters to create a strong password
+  Function that creates a combination of upper case letters, lower case letters, numbers and special characters to create a strong password
   """
   pass_entry.delete(0, END)  
   letters = [
@@ -34,8 +34,10 @@ def generator():
 
 
 def save():
-
-
+  """
+  Function retrieves data from the program. Checks if all fields in the program are filled in, then adds a new password, login and website to the json file.
+  """
+  
     page= web_entry.get()
     e_mail = email_entry.get()
     password = pass_entry.get()
