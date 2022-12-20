@@ -72,6 +72,9 @@ def save():
 
 
 def find_password():
+  """
+  Function requires entering a website that has already been saved, if it exists, it shows the login and password for it.
+  """
 
     page= web_entry.get()
     try:
