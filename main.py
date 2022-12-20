@@ -93,7 +93,8 @@ def find_password():
 
 
     
-   
+#Creating a graphical interface from the tkiner library to the program. 
+
 window = Tk()
 window.title("Password Manager".center(1))
 window.geometry("450x400")
